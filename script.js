@@ -251,6 +251,70 @@ function initTechStackAnimation() {
     setInterval(animateNextIcon, 800); // 800ms between each icon animation
 }
 
+// Enhanced smooth scrolling functionality
+function initSmoothScroll() {
+    // Add smooth scroll behavior to all anchor links
+    const links = document.querySelectorAll('a[href^="#"]');
+
+    links.forEach(link => {
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                    inline: 'nearest'
+                });
+            }
+        });
+    });
+
+    // Enhanced scroll behavior for better performance
+    let isScrolling = false;
+
+    window.addEventListener('scroll', function () {
+        if (!isScrolling) {
+            window.requestAnimationFrame(function () {
+                // Add any scroll-based animations or effects here
+                isScrolling = false;
+            });
+            isScrolling = true;
+        }
+    });
+
+    // Smooth scroll to top functionality
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    // Add scroll to top button if needed
+    const scrollTopBtn = document.createElement('button');
+    scrollTopBtn.innerHTML = '↑';
+    scrollTopBtn.className = 'fixed bottom-6 right-6 w-12 h-12 bg-black text-white rounded-full shadow-lg hover:bg-gray-800 transition-all duration-300 opacity-0 pointer-events-none z-50';
+    scrollTopBtn.setAttribute('aria-label', 'Scroll to top');
+    document.body.appendChild(scrollTopBtn);
+
+    // Show/hide scroll to top button
+    window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 300) {
+            scrollTopBtn.style.opacity = '1';
+            scrollTopBtn.style.pointerEvents = 'auto';
+        } else {
+            scrollTopBtn.style.opacity = '0';
+            scrollTopBtn.style.pointerEvents = 'none';
+        }
+    });
+
+    scrollTopBtn.addEventListener('click', scrollToTop);
+}
+
 // Initialize the page
 document.addEventListener('DOMContentLoaded', function () {
     populateExperience();
@@ -258,4 +322,5 @@ document.addEventListener('DOMContentLoaded', function () {
     initializeTabs();
     handleContactForm();
     initTechStackAnimation();
+    initSmoothScroll();
 });

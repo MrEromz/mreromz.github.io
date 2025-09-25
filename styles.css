@@ -1,5 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap');
 
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Enhanced smooth scrolling for better performance */
+* {
+    scroll-behavior: smooth;
+}
+
+/* Smooth scroll optimization */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+/* Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
 .font-serif {
     font-family: 'Playfair Display', serif;
 }
@@ -7,6 +37,7 @@
 body {
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 /* Light animated gradient background */
@@ -275,10 +306,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
+    padding: 0.6rem;
     border-radius: 12px;
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: all 0.3s ease;
     animation: gentleFloat 6s ease-in-out infinite;
@@ -358,6 +388,77 @@ body {
 
 
 
+
+/* Mobile Responsive - Hide second columns on small screens */
+@media (max-width: 768px) {
+
+    /* Hide second columns on mobile */
+    .left-icons>div:nth-child(2),
+    .right-icons>div:nth-child(2) {
+        display: none;
+    }
+
+    /* Adjust positioning for mobile */
+    .left-icons {
+        left: 2%;
+    }
+
+    .right-icons {
+        right: 2%;
+    }
+
+    /* Reduce spacing between icons on mobile */
+    .left-icons>div,
+    .right-icons>div {
+        space-y: 2;
+    }
+
+    /* Smaller tech icons on mobile */
+    .tech-icon-wrapper {
+        padding: 0.4rem;
+    }
+
+    .tech-icon-wrapper svg {
+        width: 24px !important;
+        height: 24px !important;
+    }
+
+    /* Smaller profile image on mobile */
+    .profile-image {
+        width: 96px;
+        height: 96px;
+    }
+
+    /* Adjust top and bottom icons for mobile */
+    .top-icon {
+        top: -10px;
+    }
+
+    .bottom-icon {
+        bottom: -10px;
+    }
+
+    /* Reduce container height on mobile */
+    .tech-stack-container {
+        min-height: 400px !important;
+    }
+}
+
+/* Tablet responsive adjustments */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .left-icons {
+        left: 3%;
+    }
+
+    .right-icons {
+        right: 3%;
+    }
+
+    .tech-icon-wrapper svg {
+        width: 26px !important;
+        height: 26px !important;
+    }
+}
 
 /* Tech stack container */
 .tech-stack-container {
