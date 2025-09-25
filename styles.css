@@ -11,7 +11,7 @@ body {
 
 /* Light animated gradient background */
 .animated-gradient {
-    background: linear-gradient(-45deg, rgba(255, 251, 247, 1), rgba(254, 247, 240, 1), rgba(253, 244, 227, 1), rgba(252, 241, 214, 1), rgba(250, 240, 230, 1));
+    background: linear-gradient(-45deg, rgba(250, 240, 230, 1), rgba(254, 247, 240, 1), rgba(253, 244, 227, 1), rgba(252, 241, 214, 1), rgba(255, 251, 247, 1));
     background-size: 400% 400%;
     animation: gradientBreathe 8s ease-in-out infinite;
     position: relative;

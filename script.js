@@ -1,7 +1,7 @@
 // Articles data - Add your articles here
 const articles = [
     {
-        title: "Building Scalable SaaS Platforms: Lessons from the Trenches",
+        title: "Building Scalable SaaS Platforms: Lessons from the Trenches : coming soon",
         excerpt: "Key insights from scaling a B2B SaaS platform from startup to enterprise, covering architecture decisions, team building, and product strategy.",
         date: "2024-12-15",
         readTime: "8 min read",
@@ -9,7 +9,7 @@ const articles = [
         tags: ["SaaS", "Product Strategy", "Leadership"]
     },
     {
-        title: "The Product-Engineering Bridge: Why Technical Leaders Make Great PMs",
+        title: "The Product-Engineering Bridge: Why Technical Leaders Make Great PMs: coming soon",
         excerpt: "Exploring the unique advantages that technical backgrounds bring to product management and how to leverage engineering thinking in product strategy.",
         date: "2024-11-20",
         readTime: "6 min read",
@@ -17,7 +17,7 @@ const articles = [
         tags: ["Product Management", "Engineering", "Leadership"]
     },
     {
-        title: "Fintech API Design: Security, Scalability, and Developer Experience",
+        title: "Fintech API Design: Security, Scalability, and Developer Experience: coming soon",
         excerpt: "Best practices for designing RESTful APIs in financial technology, balancing security requirements with developer-friendly interfaces.",
         date: "2024-10-05",
         readTime: "10 min read",
