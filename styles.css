@@ -282,7 +282,7 @@ div {
 }
 
 .hero-logo {
-    max-width: 120px;
+    max-width: 240px;
     height: auto;
     transition: all 0.3s ease;
     position: relative;
