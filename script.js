@@ -138,7 +138,7 @@ function populateArticles() {
 
     articles.forEach((article, index) => {
         const articleElement = document.createElement('article');
-        articleElement.className = 'border rounded-lg p-6 hover:shadow-md transition-shadow duration-200';
+        articleElement.className = 'border border-black border-b-2 rounded-lg p-6 hover:shadow-md transition-shadow duration-200';
 
         const tagsHtml = article.tags.map(tag =>
             `<span class="px-2 py-1 bg-gray-100 text-gray-600 text-xs rounded">${tag}</span>`
