@@ -33,59 +33,63 @@ const roles = [
         title: 'Chief Technology Officer',
         company: 'Aktivate ⚡️',
         location: 'Delaware, United States · Remote',
-        dates: 'Jan 2022 – Aug 2025',
+        dates: 'May 2024 – Aug 2025',
         bullets: [
-            'Directed product and technology strategy for a B2B SaaS platform.',
-            'Built and scaled a high-performing engineering team.',
-            'Oversaw full-stack architecture, deployment, and technology budgets.'
+            'Provided strategic and technical leadership for a B2B SaaS platform, overseeing the entire technology stack from architecture to deployment.',
+            'Guided product strategy and set product direction based on in-depth analysis and user feedback, ensuring alignment with business objectives and growth goals.',
+            'Managed technology budgets and built a high-performing engineering team.'
         ]
     },
     {
         title: 'Technical Lead',
         company: 'Whispa Health',
         location: 'Lagos, Nigeria',
-        dates: 'Oct 2020 – Apr 2024',
+        dates: 'Nov 2022 – Apr 2024',
         bullets: [
-            'Led development of core technical features.',
-            'Implemented engineering best practices to improve stability & velocity.'
+            ' Led a team of software engineers, guiding the development of core technical features and ensuring architectural integrity for all products.',
+            'Implemented engineering best practices, including code reviews and continuous deployment, to improve product stability and development velocity.',
+            'In charge of all development and product efforts and managing stakeholders expectations.',
+            'Built restful apis for backend service that enabled communication with doctors and clients for chat enabled service and prescription enabled service.',
+            'Oversaw the rebuild of the infrastructure and service to optimize for cost using aws reserved spot instances for rds'
+        ]
+    },
+    {
+        title: 'Consulting Technical Lead',
+        company: 'Whispa Health',
+        location: 'Lagos, Nigeria',
+        dates: 'Oct 2020 – Nov 2022',
+        bullets: [
+            ' Led a team of software engineers, guiding the development of core technical features and ensuring architectural integrity for all products.',
+            'Implemented engineering best practices, including code reviews and continuous deployment, to improve product stability and development velocity.',
+            'Maintained and managed infrastructure on aws',
+            'Managing customer issues, documented bugs identified and provided remediation for both mobile and backend api.'
         ]
     },
     {
         title: 'Senior Product Manager',
         company: 'Octamile Inc',
         location: 'Lagos, Nigeria',
-        dates: 'Jan 2022 – Aug 2022',
+        dates: 'Feb 2022 – Aug 2022',
         bullets: [
             'Drove product strategy with user-centered roadmaps.',
-            'Collaborated with cross-functional teams to launch features that boosted engagement.'
+            'Collaborated with cross-functional teams to launch features that boosted engagement.',
+            'Drove product strategy and execution by developing product roadmaps and feature requirements based on user feedback.',
+            'Collaborated with engineering, design, and business teams to launch new features, resulting in improved user engagement and business growth.',
+            'Reviewed and documented new API releases using Postman.'
         ]
     },
     {
-        title: 'Senior Technical Officer',
-        company: 'Halo Invest',
-        location: 'Lagos, Nigeria',
-        dates: 'Nov 2020 – Feb 2022',
-        bullets: [
-            'Architected RESTful APIs for fintech systems.',
-            'Integrated 3rd-party services to expand product capabilities.'
-        ]
-    },
-    {
-        title: 'Lead Developer & Product Manager',
-        company: 'UOE DOMOS',
+        title: 'Software Engineer and Product Manager',
+        company: 'Nurture Technology Services Ltd',
         location: 'Lagos, Nigeria',
         dates: 'Sep 2019 – Nov 2021',
         bullets: [
-            'Led end-to-end software lifecycle and built full-stack applications.'
-        ]
-    },
-    {
-        title: 'Software Engineer',
-        company: 'Nuture Technology Services Ltd',
-        location: 'Lagos, Nigeria',
-        dates: 'Sep 2019 – Nov 2021',
-        bullets: [
-            'Developed backend systems for savings and investment platforms.'
+            'Developed backend systems for financial products, specializing in savings and investment platforms.',
+            'Integrated core banking application APIS to enable seamless financial transactions and enhance core application functionality for both mobile and web',
+            'Led a combined development and product team, driving the full software development lifecycle.',
+            'Built full - stack applications and RESTful APIs.',
+            'Provided critical product reports to stakeholders, delegating tasks and prioritizing features.',
+            'Built and led the development of the state revenue data repositroy system that shows revenue collection from different agencies of state.'
         ]
     },
     {
@@ -94,7 +98,17 @@ const roles = [
         location: 'Lagos, Nigeria',
         dates: 'Nov 2018 – Sep 2019',
         bullets: [
-            'Led technology strategy and built scalable cloud infrastructure.'
+            'Led the technology strategy and development for a media platform for streaming content.',
+            'Designed and maintained a scalable, cloud-based infrastructure, ensuring system reliability and performance.'
+        ]
+    },
+    {
+        title: 'Contract Developer',
+        company: 'NASD OTC Securities Exchange',
+        location: 'Lagos, Nigeria',
+        dates: 'May 2017 – Mar 2018',
+        bullets: [
+            'I worked as a full-stack developer on a team tasked with building and scaling RESTful APIs and front-facing applications to power a crowdfunding platform for startups seeking to raise funds in the capital market. I transformed design mockups into responsive user interfaces and ported applications to modern frameworks, ensuring the codebase remained maintainable and up-to-date.'
         ]
     }
 ];
