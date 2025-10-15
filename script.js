@@ -30,7 +30,7 @@ const articles = [
 // Experience data
 const roles = [
     {
-        title: 'Chief Technology Officer',
+        title: 'Software Engineer',
         company: 'Aktivate ⚡️',
         location: 'Delaware, United States · Remote',
         dates: 'May 2024 – Aug 2025',
@@ -93,7 +93,7 @@ const roles = [
         ]
     },
     {
-        title: 'Chief Technological Officer',
+        title: 'Software Engineer',
         company: 'TAXI TV',
         location: 'Lagos, Nigeria',
         dates: 'Nov 2018 – Sep 2019',
